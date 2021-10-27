@@ -3,13 +3,23 @@ Maiorano Diego
 Luchetti Capalbo Mateo
 
 a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
-A-
+A- apretamos el boton compare dentro de github que compara el fork actual y el que yo tengo, luego tendremos que ponerle un titulo al nuevo fork, la aplicacion compilara todos los commits anteriors y crearemos un pull request y obtendremos todas las actualizaciones en nuestro repositorio original
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
-B-
+B- si gamma guardo su fork alfa puede llevar su version del fork al mismo estado que gamma
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
-C-Sí
+C-No, porque cada modificación es propia
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar el fork?
 D-Tanto GAMMA como ALFA no perdieron los datos hechos por ellos cuando actualizaron el fork
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
 orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
 E-
+git clone https://github.com/paulavluca/TP_SO_i2_Equipo.git
+ls
+cd TP_SO_i2_Equipo
+git status
+git add .
+git commit -m "Second comit"
+git push
+
+git remote add upstream https://github.com/Orking20/TP_SO_i2_Equipo.git
+git fetch upstream
